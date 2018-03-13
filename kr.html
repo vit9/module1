@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// #3 Напишите функцию getDecimal(num), которая возвращает десятичную часть числа:
+
+		var number = +prompt("Введите число");
+		function Decimal(num) {
+			return +(num - Math.floor(num)).toFixed(1);
+		}
+		alert(Decimal(number));
+
+
+// #3 Дан массив с элементами 2, 5, 9, 15, 0, 4. С помощью цикла for и оператора if выведите на экран столбец тех элементов массива, которые больше 3-х, но меньше 10.
+
+
+// var massive = [2, 5, 9, 15, 0, 4];
+// var i = 0;
+// for(i;i<massive.length;i++){
+// 	if(massive[i]>3 && massive[i]<10){
+// 		document.write(massive[i]+ "<br>");
+// 	}
+// }
+ 
+
+// #5 Дано число n=1000. Делите его на 2 столько раз, пока результат деления не станет меньше 50. Какое число получится? Посчитайте количество итераций, необходимых для этого (итерация - это проход цикла), и запишите его в переменную num.
+
+
+// var n = 1000;
+// var num = 0;
+// function division(n,num) {
+	
+
+// for(n,num;n>50;n/=2,num++){
+// document.write("Результат деления на 2:"+" "+ n+"<br>");
+	
+// 	}
+// 	document.write("Число итераций:"+" "+num);
+// }
+// division(n,num);
+
+
+// #2 Дана строка 'aaa@bbb@ccc'. Замените все @ на '!' с помощью глобального поиска и замены.
+
+
+// var str = 'aaa@bbb@ccc';
+// var sign = "!";
+// function dog_to_exclamation(str,sign) {
+	
+// 	  var a = /@/g;
+     
+//     var  b  = str.replace(a,sign) 
+// 	alert(b);
+// 	return b;
+// }
+// dog_to_exclamation(str,sign);
+
+
+
+
+// #2    Дана строка 'js'. Сделайте из нее строку 'JS'.
+//         Дана строка 'JS'. Сделайте из нее строку 'js'
+
+
+// function registr(str1,str2){
+// var a = str1.toUpperCase();
+// alert(a);
+// var b = str2.toLowerCase();
+// alert(b);
+// }
+// registr('js','JS');
+
+
+
+// #3 Напишите функцию min, принимающую два аргумента, и возвращающую минимальный из них.
+
+ 
+ // function min(a,b) {
+ // 	if (a>b){
+ // 		document.write("b меньше а"+"<br>");
+
+ // 	}
+ // 	else {
+ // 		document.write("a меньше b"+"<br>");
+ // 	}
+ // }
+ // min(0,10);
+ // min(0,-10);
+
+
+ // #3 Дана строка 'aaa bbb ccc'. Вырежите из нее слово 'bbb' тремя разными способами (через substr, substring, slice).
+ // var str = 'aaa bbb ccc'
+ // function cutting(str, method) {
+ // 	if (method=="substr"){
+ // 		document.write(str.substr(3,4,5));
+ // 	}
+ // 	else if(method=="substring"){
+ // 		document.write(str.substring(4,7));
+ // 	}
+ // 	else if(method=="slice"){
+ // 		document.write(str.slice(3,-3));
+ // 	}
+ // }
+ // cutting(str,"substr");
+
+//  #4 Шахматная доска. Напишите программу, создающую строку, содержащую решётку 8х8, в которой линии разделяются символами новой строки. На каждой позиции либо пробел, либо #. В результате должна получиться шахматная доска.
+
+//  var str = ["#","*","#","*","#","*","#","*"];
+//  for (var i = 0;i<str.length;i++){
+// var b = str[i];
+
+ 
+// for(var j = 0;j<b.length;j++){
+// 	var c = b[j];
+// document.write(c);
+// }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
